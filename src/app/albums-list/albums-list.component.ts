@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Album } from './album';
 
 @Component({
   selector: 'app-albums-list',
@@ -6,13 +7,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./albums-list.component.scss']
 })
 export class AlbumsListComponent {
-  disco = {
-  "nombre":"NOC",
-  "banda":"ACDC",
-  "descripcion":"lorem",
-  "estilo":"noc",
-  "anio":"1990",
-  "image":"assets/img/BackInBlack.jpg"
-  }
-
+  albums: Album[] = [
+    {
+      "nombre":"NOC",
+      "banda":"ACDC",
+      "descripcion":"lorem",
+      "estilo":"noc",
+      "anio":1990,
+      "imagen":"assets/img/BackInBlack.jpg",
+      "uranio": true,
+      "diamante": false,
+      "platino": false,
+    },
+    {
+      "nombre":"NOC",
+      "banda":"ACDC",
+      "descripcion":"lorem",
+      "estilo":"noc",
+      "anio":1990,
+      "imagen":"assets/img/BackInBlack.jpg",
+      "uranio": false,
+      "diamante": true,
+      "platino": false,
+    },
+  ]
 }

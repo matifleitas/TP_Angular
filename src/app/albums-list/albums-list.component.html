@@ -1,5 +1,5 @@
 <p>albums-list works!</p>
-<table class="table table-dark table-hover">
+<table class="table table-sm">
  <thead>
     <tr>
         <th>imagen</th>
@@ -11,25 +11,11 @@
     </tr>
  </thead>
  <tbody>
-    <tr>
-        <td><img [src]="" alt="disco.nombre"></td>
-        <td>{{disco.nombre}}</td>
-        <td>{{disco.banda}}</td>
-        <td>{{disco.descripcion}}</td>
-        <td>{{disco.estilo}}</td>
-        <td>{{disco.anio}}</td>
+    <tr *ngFor="let album of albums" [ngClass]="{'uranio': album.uranio, 'diamante': album.diamante, 'platino': album.platino}">
+        <td><img [src]="" alt="album.nombre"></td>
+        <td>{{album.nombre | uppercase}}</td>
+        <td>{{album.banda}}</td>
+        <td>{{album.descripcion}}</td>
+        <td>{{album.estilo}}</td>
+        <td>{{album.anio | date}}</td>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
- </tbody>
-</table>

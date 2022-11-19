@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { AlbumsHistoriaComponent } from './albums-historia/albums-historia.component';
 import { AlbumsDiscosComponent } from './albums-discos/albums-discos.component';
 import { AlbumsFavoritosComponent } from './albums-favoritos/albums-favoritos.component';
+import { ButtonFavoritosComponent } from './button-favoritos/button-favoritos.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AlbumsFavoritosComponent } from './albums-favoritos/albums-favoritos.co
     AlbumsListComponent,
     AlbumsHistoriaComponent,
     AlbumsDiscosComponent,
-    AlbumsFavoritosComponent
+    AlbumsFavoritosComponent,
+    ButtonFavoritosComponent
   ],
   imports: [
     BrowserModule,

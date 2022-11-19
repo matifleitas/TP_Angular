@@ -30,5 +30,15 @@ export class AlbumsListComponent {
       "diamante": true,
       "platino": false,
     },
-  ]
+  ];
+
+  constructor() { }
+
+
+  ngOnInit(): void {
+  }
+
+  // addFavorito(m: string) {
+  //   alert(m);
+  // }
 }

@@ -5,14 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlbumsListComponent } from './albums-list/albums-list.component';
 
+import { FormsModule } from '@angular/forms';
+import { AlbumsHistoriaComponent } from './albums-historia/albums-historia.component';
+import { AlbumsDiscosComponent } from './albums-discos/albums-discos.component';
+import { AlbumsFavoritosComponent } from './albums-favoritos/albums-favoritos.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumsListComponent
+    AlbumsListComponent,
+    AlbumsHistoriaComponent,
+    AlbumsDiscosComponent,
+    AlbumsFavoritosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

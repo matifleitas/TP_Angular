@@ -12,7 +12,7 @@
  </thead>
  <tbody>
     <tr *ngFor="let album of albums" [ngClass]="{'uranio': album.uranio, 'diamante': album.diamante, 'platino': album.platino}">
-        <td><img [src]="" alt="album.nombre"></td>
+        <td><img width="210" class="rounded float-start" [src]="album.imagen" alt="album.nombre"></td>
         <td>{{album.nombre | uppercase}}</td>
         <td>{{album.banda}}</td>
         <td>{{album.descripcion}}</td>

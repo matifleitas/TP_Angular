@@ -3,7 +3,7 @@ export interface Album {
     banda: string;
     descripcion: string;
     estilo: string;
-    anio: number;
+    anio: string;
     imagen: string;
     uranio: boolean;
     diamante: boolean;

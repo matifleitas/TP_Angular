@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlbumsSeccionFavoritosService } from '../albums-seccion-favoritos.service';
 import { Album } from './album';
 
 @Component({
@@ -9,11 +10,11 @@ import { Album } from './album';
 export class AlbumsListComponent {
   albums: Album[] = [
     {
-      "nombre":"NOC",
+      "nombre":"Back In Black",
       "banda":"ACDC",
       "descripcion":"lorem",
-      "estilo":"noc",
-      "anio":1990,
+      "estilo":"Hard Rock",
+      "anio":"25 de julio de 1980",
       "imagen":"assets/img/BackInBlack.jpg",
       "uranio": true,
       "diamante": false,
@@ -22,17 +23,20 @@ export class AlbumsListComponent {
     {
       "nombre":"Led Zeppelin IV",
       "banda":"Led Zeppelin",
-      "descripcion":"esta es otra",
-      "estilo":"noc",
-      "anio":1990,
+      "descripcion":" Fue producido por Jimmy Page, guitarrista del grupo.",
+      "estilo":"Hard rock, Heavy metal, Blues, Blues rock, Rock and roll, Folk rock, Música tradicional, Heavy metal tradicional",
+      "anio": "8 de noviembre de 1971",
       "imagen":"assets/img/LedZeppellinIv.jpg",
       "uranio": false,
       "diamante": true,
       "platino": false,
     },
   ];
+  
 
-  constructor() { }
+  constructor(private favorito: AlbumsSeccionFavoritosService) { 
+
+   }
 
 
   ngOnInit(): void {
@@ -41,4 +45,7 @@ export class AlbumsListComponent {
   // addFavorito(m: string) {
   //   alert(m);
   // }
+  addAlbumFavorito(albums): void {
+    this.favorito.addAlbumFavorito(albums);
+  }
 }

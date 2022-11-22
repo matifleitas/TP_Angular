@@ -17,7 +17,8 @@
         <td>{{album.banda}}</td>
         <td>{{album.descripcion}}</td>
         <td>{{album.estilo}}</td>
-        <td>{{album.anio | date}}</td>
-        <app-button-favoritos></app-button-favoritos>
+        <td>{{album.anio | uppercase}}</td>
+        <button  type="button" class="btn btn-outline-dark btn-sm" (click)="addAlbumFavorito(albums)">⭐</button>
+        <!-- <app-button-favoritos></app-button-favoritos> -->
         <!-- (addFavorito)="addFavorito($event)" -->
     </tr>

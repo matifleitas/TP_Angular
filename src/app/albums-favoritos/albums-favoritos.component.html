@@ -1,3 +1,7 @@
 
 <h4>Albumes favoritos</h4>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quo? Nulla sapiente quasi quia excepturi sequi tempora repudiandae? Nam doloremque corporis consequatur! Provident cum alias ratione accusantium rem dolorum nobis!
+<ul>
+    <li *ngFor="let album of (listaFavoritos$ | async)">
+        {{album.nombre}}
+    </li>
+</ul>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Album } from '../albums-list/album';
+import { AlbumsSeccionFavoritosService } from '../albums-seccion-favoritos.service';
 
 @Component({
   selector: 'app-albums-favoritos',
@@ -7,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class AlbumsFavoritosComponent {
 
+  listaFavoritos$: Observable<Album[]>;
+  constructor(private favorito: AlbumsSeccionFavoritosService) { 
+    this.listaFavoritos$ = favorito.listaFavoritos.asObservable();
+  }
 }

@@ -13,11 +13,10 @@ export class AlbumsSeccionFavoritosService {
     constructor() { }
 
   addAlbumFavorito(albums: Album) {
-    let item: Album = this._listaFavoritos.find((v1) => v1.nombre == albums.nombre);
+    let item: Album | undefined = this._listaFavoritos.find((v1) => v1.nombre == albums.nombre);
     if(!item) {
       this._listaFavoritos.push(albums)
     }
-    this._listaFavoritos.push(albums);
     console.log(this._listaFavoritos);
     this.listaFavoritos.next(this._listaFavoritos);
   

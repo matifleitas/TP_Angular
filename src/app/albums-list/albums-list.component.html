@@ -1,4 +1,6 @@
-<p>albums-list works!</p>
+   <li>🟥 50 millones de copias vendidas.</li>
+   <li>🟦 1 millon de copias vendidas.</li> 
+
 <table class="table table-sm">
  <thead>
     <tr>
@@ -12,13 +14,12 @@
  </thead>
  <tbody>
     <tr *ngFor="let album of albums" [ngClass]="{'uranio': album.uranio, 'diamante': album.diamante, 'platino': album.platino}">
-        <td><img width="210" class="rounded float-start" [src]="album.imagen" alt="album.nombre"></td>
+        <td><img width="220" class="rounded float-start" [src]="album.imagen" alt="album.nombre"></td>
         <td>{{album.nombre | uppercase}}</td>
         <td>{{album.banda}}</td>
         <td>{{album.descripcion}}</td>
         <td>{{album.estilo}}</td>
         <td>{{album.anio | uppercase}}</td>
-        <button  type="button" class="btn btn-outline-dark btn-sm" (click)="addAlbumFavorito(albums)">⭐</button>
-        <!-- <app-button-favoritos></app-button-favoritos> -->
-        <!-- (addFavorito)="addFavorito($event)" -->
+        <button  type="button" class="btn btn-outline-dark btn-sm" (click)="addAlbumFavorito(album)">⭐</button>
+
     </tr>

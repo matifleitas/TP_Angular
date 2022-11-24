@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlbumsListComponent } from './albums-list/albums-list.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { FormsModule } from '@angular/forms';
 import { AlbumsHistoriaComponent } from './albums-historia/albums-historia.component';
 import { AlbumsDiscosComponent } from './albums-discos/albums-discos.component';
@@ -24,8 +26,8 @@ import { ButtonFavoritosComponent } from './button-favoritos/button-favoritos.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

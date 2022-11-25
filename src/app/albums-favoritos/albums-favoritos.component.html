@@ -1,7 +1,7 @@
 
-<h4>Albumes favoritos</h4>
+<h4 class="titulo-favoritos">Albumes favoritos</h4>
 <ul>
-    <li *ngFor="let album of (listaFavoritos$ | async)">
+    <li class="h5" *ngFor="let album of (listaFavoritos$ | async)">
         {{album.nombre}}
     </li>
 </ul>

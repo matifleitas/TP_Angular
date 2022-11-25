@@ -1,4 +1,60 @@
-.nacimientoRock {
-    display: flex;
-    align-items: center;
+.container-historia {
+    background-color: rgba(255, 255, 255, 0.821);
 }
+
+.titulo-historia {
+    display: flex;
+    justify-content: center;
+}
+
+.nacimientoRock {
+    border-radius: 5%;
+    float: left;
+}
+
+.beatles {
+    border-radius: 5%;
+    float: right;
+}
+
+.ramones {
+    border-radius: 5%;
+    float: left;
+}
+
+.acdc {
+    border-radius: 5%;
+    float: right;
+}
+
+.gnr {
+    border-radius: 5%;
+    float: left;
+}
+
+.encabezado {
+    margin: 20px;
+    font-size: large;
+}
+
+.decada-60 {
+    margin: 20px;
+    font-size: large;
+}
+
+.decada-70 {
+    margin: 20px;
+    font-size: large;
+}
+
+.decada-80 {
+    margin: 20px;
+    font-size: large;
+}
+
+.decada-90 {
+    margin: 20px;
+    font-size: large;
+}
+
+

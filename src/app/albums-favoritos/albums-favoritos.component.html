@@ -1,7 +1,11 @@
+<a href="#" (click)="mostrarOcultar()" class="mostrar-ocultar btn btn-light">{{mensaje_enlace}}</a>
 
-<h4 class="titulo-favoritos">Albumes favoritos</h4>
-<ul>
-    <li class="h5" *ngFor="let album of (listaFavoritos$ | async)">
-        {{album.nombre}}
-    </li>
-</ul>
+<div *ngIf="mostrar">
+    <h4 class="titulo-favoritos">Albumes favoritos:</h4>
+    <p>{{mensaje}}</p>
+    <ul>
+        <li class="h5" *ngFor="let album of (listaFavoritos$ | async)">
+            {{album.nombre}}-({{album.anio}})
+        </li>
+    </ul>
+</div>
